@@ -7,7 +7,7 @@ export function Loader({route, navigation}) {
     const {screenName} = route.params;
     setTimeout(() => {
       navigation.navigate(screenName);
-    });
+    }, 4000);
   }, [navigation]);
   return (
     <View style={[styles.container, styles.horizontal]}>
