@@ -44,11 +44,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   item: {
-    backgroundColor: '#f9c2ff',
+    backgroundColor: '#e6e6ff',
     padding: 15,
     marginVertical: 8,
     marginHorizontal: 16,
-    width: 300,
+    width: 340,
     justifyContent: 'center',
     alignContent: 'center',
     alignItems: 'center',

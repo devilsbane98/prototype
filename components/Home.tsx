@@ -13,12 +13,20 @@ import {Button} from 'react-native-paper';
 
 export function HomeScreen({navigation}) {
   const [result, setResult] = React.useState<Array<DocumentPickerResponse>>();
-
+  const key = [
+    -44571.7, 9838.75, 67399, 93422.56, 113750.31, 122355.37, 72959, 88912.33,
+  ];
   useEffect(() => {
     async function readFile() {
       if (result) {
         const response = await axios.get(result[0].uri);
-        if (response.data?.fruit === 'Apple') {
+        // console.log(response.data.signature);
+        // console.log(key);
+        // eslint-disable-next-line eqeqeq
+        let cond = response.data?.signature.every(
+          (val, index) => val === key[index],
+        );
+        if (cond) {
           navigation.navigate('Loader', {screenName: 'AnalysisSuccess'});
         } else {
           navigation.navigate('Loader', {screenName: 'AnalysisFailed'});
@@ -61,7 +69,7 @@ export function HomeScreen({navigation}) {
       <Button
         mode="elevated"
         onPress={() => navigation.navigate('DatabaseList')}>
-        Database List
+        View Users
       </Button>
       {/* <Text selectable>Result: {JSON.stringify(result, null, 2)}</Text> */}
     </View>
