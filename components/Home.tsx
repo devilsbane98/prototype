@@ -71,6 +71,10 @@ export function HomeScreen({navigation}) {
         onPress={() => navigation.navigate('DatabaseList')}>
         View Users
       </Button>
+      <View style={{height: 20}} />
+      <Button mode="elevated" onPress={() => navigation.navigate('Stimuli')}>
+        Conduct Test
+      </Button>
       {/* <Text selectable>Result: {JSON.stringify(result, null, 2)}</Text> */}
     </View>
   );

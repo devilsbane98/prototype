@@ -18,6 +18,7 @@ export function DatabaseList({navigation}) {
   useEffect(() => {
     navigation.setOptions({
       headerShown: true,
+      // eslint-disable-next-line react/no-unstable-nested-components
       headerLeft: props => (
         <HeaderBackButton
           {...props}

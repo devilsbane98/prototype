@@ -7,6 +7,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {AnalysisSuccess} from './components/AnalysisSuccess';
 import {DatabaseList} from './components/DatabaseList';
 import {Loader} from './components/Loader';
+import {Stimuli} from './components/Stimuli';
+import {Analysis} from './components/Analysis';
 
 const Stack = createNativeStackNavigator();
 
@@ -35,6 +37,12 @@ export default function App() {
           component={Loader}
           options={{headerShown: false}}
         />
+        <Stack.Screen
+          name="Stimuli"
+          component={Stimuli}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen name="Analysis" component={Analysis} />
       </Stack.Navigator>
     </NavigationContainer>
   );
