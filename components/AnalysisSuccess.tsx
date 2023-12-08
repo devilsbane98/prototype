@@ -1,10 +1,11 @@
+/* eslint-disable react-native/no-inline-styles */
 /* eslint-disable react/no-unstable-nested-components */
 import * as React from 'react';
 import {useEffect, useCallback} from 'react';
 import {Button, Image, StyleSheet, Text, View} from 'react-native';
 import {HeaderBackButton} from '@react-navigation/elements';
 
-export function AnalysisSuccess({navigation}) {
+export function AnalysisSuccess({route, navigation}) {
   useEffect(() => {
     navigation.setOptions({
       headerShown: true,
@@ -18,18 +19,33 @@ export function AnalysisSuccess({navigation}) {
       ),
     });
   });
+  const {sid} = route.params;
 
   return (
     <View style={styles.container}>
       <Text style={{color: 'green', fontSize: 20}}>Match Found</Text>
       <View style={styles.item}>
-        <Image source={require('../assets/1.jpeg')} />
-        <Text style={styles.title}>{'Subject 1'}</Text>
-        <Text style={styles.title}>Accuracy: 98%</Text>
-        <Image
-          source={require('../assets/graph.png')}
-          style={{width: 300, height: 300, resizeMode: 'center'}}
-        />
+        {sid === 1 ? (
+          <>
+            <Image source={require('../assets/1.jpeg')} />
+            <Text style={styles.title}>{'Subject 1'}</Text>
+            <Text style={styles.title}>Accuracy: 98%</Text>
+            <Image
+              source={require('../assets/graph.png')}
+              style={{width: 300, height: 300, resizeMode: 'center'}}
+            />
+          </>
+        ) : (
+          <>
+            <Image source={require('../assets/2.jpeg')} />
+            <Text style={styles.title}>{'Subject 2'}</Text>
+            <Text style={styles.title}>Accuracy: 98%</Text>
+            <Image
+              source={require('../assets/graph.png')}
+              style={{width: 300, height: 300, resizeMode: 'center'}}
+            />
+          </>
+        )}
       </View>
     </View>
   );

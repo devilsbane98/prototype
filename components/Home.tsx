@@ -16,6 +16,9 @@ export function HomeScreen({navigation}) {
   const key = [
     -44571.7, 9838.75, 67399, 93422.56, 113750.31, 122355.37, 72959, 88912.33,
   ];
+  const key2 = [
+    -367.2, 30593.3, 6134, 4331.1, 33345.34, 1245.4, 4324.3, 1345.32,
+  ];
   useEffect(() => {
     async function readFile() {
       if (result) {
@@ -26,8 +29,19 @@ export function HomeScreen({navigation}) {
         let cond = response.data?.signature.every(
           (val, index) => val === key[index],
         );
+        let cond2 = response.data?.signature.every(
+          (val, index) => val === key2[index],
+        );
         if (cond) {
-          navigation.navigate('Loader', {screenName: 'AnalysisSuccess'});
+          navigation.navigate('Loader', {
+            screenName: 'AnalysisSuccess',
+            sid: 1,
+          });
+        } else if (cond2) {
+          navigation.navigate('Loader', {
+            screenName: 'AnalysisSuccess',
+            sid: 2,
+          });
         } else {
           navigation.navigate('Loader', {screenName: 'AnalysisFailed'});
         }
@@ -50,6 +64,16 @@ export function HomeScreen({navigation}) {
   };
   return (
     <View style={styles.container}>
+      <Button mode="elevated" onPress={() => navigation.navigate('Stimuli')}>
+        Capture Signature
+      </Button>
+      <View style={{height: 20}} />
+      <Button
+        mode="elevated"
+        onPress={() => navigation.navigate('DatabaseList')}>
+        View Bank Customers
+      </Button>
+      <View style={{height: 20}} />
       <Button
         mode="elevated"
         onPress={async () => {
@@ -63,17 +87,7 @@ export function HomeScreen({navigation}) {
             handleError(e);
           }
         }}>
-        Select Data File for Analysis
-      </Button>
-      <View style={{height: 20}} />
-      <Button
-        mode="elevated"
-        onPress={() => navigation.navigate('DatabaseList')}>
-        View Users
-      </Button>
-      <View style={{height: 20}} />
-      <Button mode="elevated" onPress={() => navigation.navigate('Stimuli')}>
-        Conduct Test
+        Authenticate with the bank
       </Button>
       {/* <Text selectable>Result: {JSON.stringify(result, null, 2)}</Text> */}
     </View>

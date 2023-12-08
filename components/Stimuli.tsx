@@ -67,7 +67,7 @@ export const Stimuli = ({navigation}) => {
           onPress={() => {
             navigation.navigate('Analysis');
           }}>
-          <Text style={styles.proceed}>Tap to Proced</Text>
+          <Text style={styles.proceed}>Tap to Proceed</Text>
         </TouchableOpacity>
       ) : undefined}
     </View>

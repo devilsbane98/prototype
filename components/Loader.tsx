@@ -4,9 +4,9 @@ import {ActivityIndicator, StyleSheet, View} from 'react-native';
 
 export function Loader({route, navigation}) {
   useEffect(() => {
-    const {screenName} = route.params;
+    const {screenName, sid} = route.params;
     setTimeout(() => {
-      navigation.navigate(screenName);
+      navigation.navigate(screenName, {sid});
     }, 4000);
   }, [navigation]);
   return (
