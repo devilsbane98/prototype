@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {useEffect} from 'react';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, TouchableOpacity, View} from 'react-native';
 import DocumentPicker, {
   DocumentPickerResponse,
   isCancel,
@@ -9,7 +9,9 @@ import DocumentPicker, {
 import axios from 'axios';
 import {Appbar, Button, IconButton, Text} from 'react-native-paper';
 import {SvgUri} from 'react-native-svg';
-import SvgIcon from './SvgIcon';
+import SignatureIcon from './SignatureIcon';
+import CustomerIcon from './CustomerIcon';
+import AuthenticateIcon from './AuthenticateIcon';
 // const Signature = require('./../assets/signature.svg');
 
 export function HomeScreen({navigation}) {
@@ -103,84 +105,173 @@ export function HomeScreen({navigation}) {
           fontSize: 18,
           fontFamily: 'Inter',
           fontWeight: '400',
-          wordWrap: 'break-word',
         }}>
         Please choose one of the listed options
       </Text>
-
       {/* // List of cards */}
       {/* <View style={{ height: 20 }} > */}
       {/* view with row  */}
-      <View
+      <TouchableOpacity
+        onPress={() => navigation.navigate('Stimuli')}
         style={{
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
+          marginTop: 20,
         }}>
-        {/* card 1 */}
         <View
           style={{
-            width: '60%',
-            height: 100,
-            justifyContent: 'center',
             flexDirection: 'row',
+            justifyContent: 'space-between',
             alignItems: 'center',
           }}>
-          {/* <SvgUri width={50} height={50} source={'./../assets/signature.svg'} /> */}
-          {/* <Signature height={10} weight={10} /> */}
-          {/* <IconButton
+          {/* card 1 */}
+          <View
+            style={{
+              height: 80,
+              justifyContent: 'center',
+              flexDirection: 'row',
+              alignItems: 'center',
+            }}>
+            {/* <SvgUri width={50} height={50} source={'./../assets/signature.svg'} /> */}
+            {/* <Signature height={10} weight={10} /> */}
+            {/* <IconButton
             icon="clipboard-signature"
             size={20}
             style={headerStyles.iconButton}
             onPress={() => navigation.goBack()}
           /> */}
-          <SvgIcon />
-          <View>
-            <Text
+            <View
               style={{
-                color: '#151940',
-                fontSize: 18,
-                fontFamily: 'Inter',
-                fontWeight: '700',
-                letterSpacing: 1.35,
-                paddingLeft: 10,
-                // wordWrap: 'break-word',
+                width: 40,
+                height: 40,
+                backgroundColor: '#F0F8FF',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                borderRadius: 8,
               }}>
-              Capture Signature
-            </Text>
-            <Text
+              <SignatureIcon
+                style={{
+                  width: 50,
+                  height: 50,
+                  backgroundColor: '#F0F8FF',
+                }}
+              />
+            </View>
+            <View
               style={{
-                color: '#151940',
-                fontSize: 18,
-                fontFamily: 'Inter',
-                fontWeight: '700',
-                letterSpacing: 1.35,
-                paddingLeft: 10,
-                // wordWrap: 'break-word',
+                marginLeft: 10,
               }}>
-              Capture Signature
-            </Text>
-          </View>
-        </View>
-        <IconButton
-          icon="arrow-right"
-          size={20}
-          onPress={() => navigation.goBack()}
-        />
-      </View>
+              <Text
+                style={{
+                  color: '#151940',
+                  fontSize: 18,
+                  fontFamily: 'Inter',
+                  fontWeight: '700',
+                  letterSpacing: 1.35,
 
-      <Button mode="elevated" onPress={() => navigation.navigate('Stimuli')}>
-        Capture Signature
-      </Button>
-      <View style={{height: 20}} />
-      <Button
-        mode="elevated"
-        onPress={() => navigation.navigate('DatabaseList')}>
-        View Bank Customers
-      </Button>
-      <View style={{height: 20}} />
-      <Button
-        mode="elevated"
+                  // wordWrap: 'break-word',
+                }}>
+                Capture Signature
+              </Text>
+              <Text
+                style={{
+                  width: '100%',
+                  color: '#3A759F',
+                  fontSize: 12,
+                  fontFamily: 'Inter',
+                  fontWeight: '400',
+                  wordWrap: 'break-word',
+                }}>
+                Take your signature
+              </Text>
+            </View>
+          </View>
+          <IconButton
+            icon="arrow-right"
+            size={20}
+            onPress={() => navigation.goBack()}
+          />
+        </View>
+      </TouchableOpacity>
+
+      <TouchableOpacity onPress={() => navigation.navigate('DatabaseList')}>
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+          }}>
+          {/* card 1 */}
+          <View
+            style={{
+              height: 80,
+              justifyContent: 'center',
+              flexDirection: 'row',
+              alignItems: 'center',
+            }}>
+            {/* <SvgUri width={50} height={50} source={'./../assets/signature.svg'} /> */}
+            {/* <Signature height={10} weight={10} /> */}
+            {/* <IconButton
+            icon="clipboard-signature"
+            size={20}
+            style={headerStyles.iconButton}
+            onPress={() => navigation.goBack()}
+          /> */}
+            <View
+              style={{
+                width: 40,
+                height: 40,
+                backgroundColor: '#F0F8FF',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                borderRadius: 8,
+              }}>
+              <CustomerIcon
+                style={{
+                  width: 50,
+                  height: 50,
+                  backgroundColor: '#F0F8FF',
+                }}
+              />
+            </View>
+            <View
+              style={{
+                marginLeft: 10,
+              }}>
+              <Text
+                style={{
+                  color: '#151940',
+                  fontSize: 16,
+                  fontFamily: 'Inter',
+                  fontWeight: '700',
+                  letterSpacing: 1.35,
+
+                  // wordWrap: 'break-word',
+                }}>
+                New Bank Customers
+              </Text>
+              <Text
+                style={{
+                  width: '100%',
+                  color: '#3A759F',
+                  fontSize: 12,
+                  fontFamily: 'Inter',
+                  fontWeight: '400',
+                  wordWrap: 'break-word',
+                }}>
+                New Bank Customers
+              </Text>
+            </View>
+          </View>
+          <IconButton
+            icon="arrow-right"
+            size={20}
+            onPress={() => navigation.goBack()}
+          />
+        </View>
+      </TouchableOpacity>
+
+      <TouchableOpacity
         onPress={async () => {
           try {
             const pickerResult = await DocumentPicker.pickSingle({
@@ -192,8 +283,83 @@ export function HomeScreen({navigation}) {
             handleError(e);
           }
         }}>
-        Authenticate with the bank
-      </Button>
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+          }}>
+          {/* card 1 */}
+          <View
+            style={{
+              height: 80,
+              justifyContent: 'center',
+              flexDirection: 'row',
+              alignItems: 'center',
+            }}>
+            {/* <SvgUri width={50} height={50} source={'./../assets/signature.svg'} /> */}
+            {/* <Signature height={10} weight={10} /> */}
+            {/* <IconButton
+            icon="clipboard-signature"
+            size={20}
+            style={headerStyles.iconButton}
+            onPress={() => navigation.goBack()}
+          /> */}
+            <View
+              style={{
+                width: 40,
+                height: 40,
+                backgroundColor: '#F0F8FF',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                borderRadius: 8,
+              }}>
+              <AuthenticateIcon
+                style={{
+                  width: 50,
+                  height: 50,
+                  backgroundColor: '#F0F8FF',
+                }}
+              />
+            </View>
+            <View
+              style={{
+                marginLeft: 10,
+              }}>
+              <Text
+                style={{
+                  color: '#151940',
+                  fontSize: 16,
+                  fontFamily: 'Inter',
+                  fontWeight: '700',
+                  letterSpacing: 1.35,
+
+                  // wordWrap: 'break-word',
+                }}>
+                Authenticate with the Bank
+              </Text>
+              <Text
+                style={{
+                  width: '100%',
+                  color: '#3A759F',
+                  fontSize: 12,
+                  fontFamily: 'Inter',
+                  fontWeight: '400',
+                  wordWrap: 'break-word',
+                }}>
+                Verify your banking account
+              </Text>
+            </View>
+          </View>
+          <IconButton
+            icon="arrow-right"
+            size={20}
+            onPress={() => navigation.goBack()}
+          />
+        </View>
+      </TouchableOpacity>
+
       {/* <Text selectable>Result: {JSON.stringify(result, null, 2)}</Text> */}
     </View>
   );
