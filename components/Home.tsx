@@ -1,15 +1,16 @@
 import * as React from 'react';
-import {useEffect, useCallback} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {useEffect} from 'react';
+import {StyleSheet, View} from 'react-native';
 import DocumentPicker, {
-  DirectoryPickerResponse,
   DocumentPickerResponse,
   isCancel,
   isInProgress,
-  types,
 } from 'react-native-document-picker';
 import axios from 'axios';
-import {Button} from 'react-native-paper';
+import {Appbar, Button, IconButton, Text} from 'react-native-paper';
+import {SvgUri} from 'react-native-svg';
+import SvgIcon from './SvgIcon';
+// const Signature = require('./../assets/signature.svg');
 
 export function HomeScreen({navigation}) {
   const [result, setResult] = React.useState<Array<DocumentPickerResponse>>();
@@ -64,6 +65,110 @@ export function HomeScreen({navigation}) {
   };
   return (
     <View style={styles.container}>
+      <Appbar.Header style={headerStyles.container}>
+        {/* Left side square button */}
+        <IconButton
+          icon="arrow-left"
+          size={20}
+          style={headerStyles.iconButton}
+          onPress={() => navigation.goBack()}
+        />
+        {/* Title */}
+        <View style={headerStyles.titleContainer}>
+          <Text style={headerStyles.titleText}>Your Title</Text>
+        </View>
+        {/* Right side button with three dots */}
+        <IconButton
+          icon="dots-vertical"
+          size={20}
+          style={headerStyles.iconButton}
+          onPress={() => console.log('Dots pressed')}
+        />
+      </Appbar.Header>
+      <Text
+        style={{
+          color: '#151940',
+          fontSize: 45,
+          fontFamily: 'Inter',
+          fontWeight: '700',
+          letterSpacing: 1.35,
+          wordWrap: 'break-word',
+        }}>
+        Home
+      </Text>
+      <Text
+        style={{
+          width: '100%',
+          color: '#3A759F',
+          fontSize: 18,
+          fontFamily: 'Inter',
+          fontWeight: '400',
+          wordWrap: 'break-word',
+        }}>
+        Please choose one of the listed options
+      </Text>
+
+      {/* // List of cards */}
+      {/* <View style={{ height: 20 }} > */}
+      {/* view with row  */}
+      <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+        }}>
+        {/* card 1 */}
+        <View
+          style={{
+            width: '60%',
+            height: 100,
+            justifyContent: 'center',
+            flexDirection: 'row',
+            alignItems: 'center',
+          }}>
+          {/* <SvgUri width={50} height={50} source={'./../assets/signature.svg'} /> */}
+          {/* <Signature height={10} weight={10} /> */}
+          {/* <IconButton
+            icon="clipboard-signature"
+            size={20}
+            style={headerStyles.iconButton}
+            onPress={() => navigation.goBack()}
+          /> */}
+          <SvgIcon />
+          <View>
+            <Text
+              style={{
+                color: '#151940',
+                fontSize: 18,
+                fontFamily: 'Inter',
+                fontWeight: '700',
+                letterSpacing: 1.35,
+                paddingLeft: 10,
+                // wordWrap: 'break-word',
+              }}>
+              Capture Signature
+            </Text>
+            <Text
+              style={{
+                color: '#151940',
+                fontSize: 18,
+                fontFamily: 'Inter',
+                fontWeight: '700',
+                letterSpacing: 1.35,
+                paddingLeft: 10,
+                // wordWrap: 'break-word',
+              }}>
+              Capture Signature
+            </Text>
+          </View>
+        </View>
+        <IconButton
+          icon="arrow-right"
+          size={20}
+          onPress={() => navigation.goBack()}
+        />
+      </View>
+
       <Button mode="elevated" onPress={() => navigation.navigate('Stimuli')}>
         Capture Signature
       </Button>
@@ -94,12 +199,36 @@ export function HomeScreen({navigation}) {
   );
 }
 
+const headerStyles = StyleSheet.create({
+  container: {
+    backgroundColor: 'transparent',
+    elevation: 0, // This removes the shadow on Android
+  },
+  iconButton: {
+    overflow: 'visible',
+    backgroundColor: '#F0F8FF',
+    boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)',
+    color: 'white',
+    borderRadius: 8,
+    borderWidth: 0.2,
+    elevation: 5, // For Android
+  },
+  titleContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    flex: 1,
+  },
+  titleText: {
+    color: 'white',
+    fontSize: 18,
+  },
+});
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
     backgroundColor: 'white',
+    padding: 20,
   },
   box: {
     width: 60,

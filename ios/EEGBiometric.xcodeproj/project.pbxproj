@@ -8,12 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* EEGBiometricTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* EEGBiometricTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-EEGBiometric.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-EEGBiometric.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-EEGBiometric-EEGBiometricTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-EEGBiometric-EEGBiometricTests.a */; };
+		365B5FC8D5D058B93AD6E238 /* libPods-EEGBiometric-EEGBiometricTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1F6E71043F4973AE52CF87 /* libPods-EEGBiometric-EEGBiometricTests.a */; };
+		61A37BC02B3D564B00E8359A /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BAD2B3D564B00E8359A /* Foundation.ttf */; };
+		61A37BC12B3D564B00E8359A /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BAE2B3D564B00E8359A /* Feather.ttf */; };
+		61A37BC22B3D564B00E8359A /* FontAwesome6_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BAF2B3D564B00E8359A /* FontAwesome6_Regular.ttf */; };
+		61A37BC32B3D564B00E8359A /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BB02B3D564B00E8359A /* Entypo.ttf */; };
+		61A37BC42B3D564B00E8359A /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BB12B3D564B00E8359A /* MaterialCommunityIcons.ttf */; };
+		61A37BC52B3D564B00E8359A /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BB22B3D564B00E8359A /* EvilIcons.ttf */; };
+		61A37BC62B3D564B00E8359A /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BB32B3D564B00E8359A /* FontAwesome.ttf */; };
+		61A37BC72B3D564B00E8359A /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BB42B3D564B00E8359A /* FontAwesome6_Brands.ttf */; };
+		61A37BC82B3D564B00E8359A /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BB52B3D564B00E8359A /* AntDesign.ttf */; };
+		61A37BC92B3D564B00E8359A /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BB62B3D564B00E8359A /* FontAwesome5_Regular.ttf */; };
+		61A37BCA2B3D564B00E8359A /* FontAwesome6_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BB72B3D564B00E8359A /* FontAwesome6_Solid.ttf */; };
+		61A37BCB2B3D564B00E8359A /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BB82B3D564B00E8359A /* FontAwesome5_Brands.ttf */; };
+		61A37BCC2B3D564B00E8359A /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BB92B3D564B00E8359A /* Ionicons.ttf */; };
+		61A37BCD2B3D564B00E8359A /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BBA2B3D564B00E8359A /* SimpleLineIcons.ttf */; };
+		61A37BCE2B3D564B00E8359A /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BBB2B3D564B00E8359A /* Octicons.ttf */; };
+		61A37BCF2B3D564B00E8359A /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BBC2B3D564B00E8359A /* FontAwesome5_Solid.ttf */; };
+		61A37BD02B3D564B00E8359A /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BBD2B3D564B00E8359A /* Fontisto.ttf */; };
+		61A37BD12B3D564B00E8359A /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BBE2B3D564B00E8359A /* MaterialIcons.ttf */; };
+		61A37BD22B3D564B00E8359A /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A37BBF2B3D564B00E8359A /* Zocial.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8FDF194158C619853DDCBC86 /* libPods-EEGBiometric.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEC9594DA421428C9C5D079 /* libPods-EEGBiometric.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,19 +49,39 @@
 		00E356EE1AD99517003FC87E /* EEGBiometricTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EEGBiometricTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* EEGBiometricTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEGBiometricTests.m; sourceTree = "<group>"; };
+		0DEC9594DA421428C9C5D079 /* libPods-EEGBiometric.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EEGBiometric.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* EEGBiometric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EEGBiometric.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = EEGBiometric/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = EEGBiometric/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = EEGBiometric/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = EEGBiometric/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = EEGBiometric/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-EEGBiometric-EEGBiometricTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EEGBiometric-EEGBiometricTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-EEGBiometric.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEGBiometric.debug.xcconfig"; path = "Target Support Files/Pods-EEGBiometric/Pods-EEGBiometric.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-EEGBiometric.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEGBiometric.release.xcconfig"; path = "Target Support Files/Pods-EEGBiometric/Pods-EEGBiometric.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-EEGBiometric-EEGBiometricTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEGBiometric-EEGBiometricTests.debug.xcconfig"; path = "Target Support Files/Pods-EEGBiometric-EEGBiometricTests/Pods-EEGBiometric-EEGBiometricTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-EEGBiometric.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EEGBiometric.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F1F6E71043F4973AE52CF87 /* libPods-EEGBiometric-EEGBiometricTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EEGBiometric-EEGBiometricTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61A37BAB2B3D555500E8359A /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = "../node_modules/react-native-vector-icons/Fonts"; sourceTree = "<group>"; };
+		61A37BAD2B3D564B00E8359A /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		61A37BAE2B3D564B00E8359A /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		61A37BAF2B3D564B00E8359A /* FontAwesome6_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome6_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome6_Regular.ttf"; sourceTree = "<group>"; };
+		61A37BB02B3D564B00E8359A /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		61A37BB12B3D564B00E8359A /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		61A37BB22B3D564B00E8359A /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		61A37BB32B3D564B00E8359A /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		61A37BB42B3D564B00E8359A /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome6_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome6_Brands.ttf"; sourceTree = "<group>"; };
+		61A37BB52B3D564B00E8359A /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		61A37BB62B3D564B00E8359A /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		61A37BB72B3D564B00E8359A /* FontAwesome6_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome6_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome6_Solid.ttf"; sourceTree = "<group>"; };
+		61A37BB82B3D564B00E8359A /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		61A37BB92B3D564B00E8359A /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		61A37BBA2B3D564B00E8359A /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		61A37BBB2B3D564B00E8359A /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		61A37BBC2B3D564B00E8359A /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		61A37BBD2B3D564B00E8359A /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		61A37BBE2B3D564B00E8359A /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		61A37BBF2B3D564B00E8359A /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		61D0472A8D3E8BBB004D0D0F /* Pods-EEGBiometric.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEGBiometric.debug.xcconfig"; path = "Target Support Files/Pods-EEGBiometric/Pods-EEGBiometric.debug.xcconfig"; sourceTree = "<group>"; };
+		71F74FABE1047ACFB9D104C5 /* Pods-EEGBiometric.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEGBiometric.release.xcconfig"; path = "Target Support Files/Pods-EEGBiometric/Pods-EEGBiometric.release.xcconfig"; sourceTree = "<group>"; };
+		72EECF09182083B0DB1D0EB6 /* Pods-EEGBiometric-EEGBiometricTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEGBiometric-EEGBiometricTests.debug.xcconfig"; path = "Target Support Files/Pods-EEGBiometric-EEGBiometricTests/Pods-EEGBiometric-EEGBiometricTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = EEGBiometric/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-EEGBiometric-EEGBiometricTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEGBiometric-EEGBiometricTests.release.xcconfig"; path = "Target Support Files/Pods-EEGBiometric-EEGBiometricTests/Pods-EEGBiometric-EEGBiometricTests.release.xcconfig"; sourceTree = "<group>"; };
+		A9121B638FA3706CB008889B /* Pods-EEGBiometric-EEGBiometricTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEGBiometric-EEGBiometricTests.release.xcconfig"; path = "Target Support Files/Pods-EEGBiometric-EEGBiometricTests/Pods-EEGBiometric-EEGBiometricTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-EEGBiometric-EEGBiometricTests.a in Frameworks */,
+				365B5FC8D5D058B93AD6E238 /* libPods-EEGBiometric-EEGBiometricTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-EEGBiometric.a in Frameworks */,
+				8FDF194158C619853DDCBC86 /* libPods-EEGBiometric.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +125,7 @@
 		13B07FAE1A68108700A75B9A /* EEGBiometric */ = {
 			isa = PBXGroup;
 			children = (
+				61A37BAC2B3D55EB00E8359A /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -99,11 +139,38 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				61A37BAB2B3D555500E8359A /* Fonts */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-EEGBiometric.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-EEGBiometric-EEGBiometricTests.a */,
+				0DEC9594DA421428C9C5D079 /* libPods-EEGBiometric.a */,
+				1F1F6E71043F4973AE52CF87 /* libPods-EEGBiometric-EEGBiometricTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61A37BAC2B3D55EB00E8359A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				61A37BB52B3D564B00E8359A /* AntDesign.ttf */,
+				61A37BB02B3D564B00E8359A /* Entypo.ttf */,
+				61A37BB22B3D564B00E8359A /* EvilIcons.ttf */,
+				61A37BAE2B3D564B00E8359A /* Feather.ttf */,
+				61A37BB32B3D564B00E8359A /* FontAwesome.ttf */,
+				61A37BB82B3D564B00E8359A /* FontAwesome5_Brands.ttf */,
+				61A37BB62B3D564B00E8359A /* FontAwesome5_Regular.ttf */,
+				61A37BBC2B3D564B00E8359A /* FontAwesome5_Solid.ttf */,
+				61A37BB42B3D564B00E8359A /* FontAwesome6_Brands.ttf */,
+				61A37BAF2B3D564B00E8359A /* FontAwesome6_Regular.ttf */,
+				61A37BB72B3D564B00E8359A /* FontAwesome6_Solid.ttf */,
+				61A37BBD2B3D564B00E8359A /* Fontisto.ttf */,
+				61A37BAD2B3D564B00E8359A /* Foundation.ttf */,
+				61A37BB92B3D564B00E8359A /* Ionicons.ttf */,
+				61A37BB12B3D564B00E8359A /* MaterialCommunityIcons.ttf */,
+				61A37BBE2B3D564B00E8359A /* MaterialIcons.ttf */,
+				61A37BBB2B3D564B00E8359A /* Octicons.ttf */,
+				61A37BBA2B3D564B00E8359A /* SimpleLineIcons.ttf */,
+				61A37BBF2B3D564B00E8359A /* Zocial.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -140,10 +207,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-EEGBiometric.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-EEGBiometric.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-EEGBiometric-EEGBiometricTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-EEGBiometric-EEGBiometricTests.release.xcconfig */,
+				61D0472A8D3E8BBB004D0D0F /* Pods-EEGBiometric.debug.xcconfig */,
+				71F74FABE1047ACFB9D104C5 /* Pods-EEGBiometric.release.xcconfig */,
+				72EECF09182083B0DB1D0EB6 /* Pods-EEGBiometric-EEGBiometricTests.debug.xcconfig */,
+				A9121B638FA3706CB008889B /* Pods-EEGBiometric-EEGBiometricTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -155,12 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "EEGBiometricTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				9D8164067F696AD08F53C2E6 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				4D6176AFA95A935007A40B05 /* [CP] Embed Pods Frameworks */,
+				BCB282C3AC13F9FE9751CCA4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,14 +243,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "EEGBiometric" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				D5CFDC214E60B6B3B19E7E2A /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				C160ED4B042B62E78C0405B7 /* [CP] Embed Pods Frameworks */,
+				F4F1F3EB2A15D72B1EB8CEA1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,7 +309,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A37BC72B3D564B00E8359A /* FontAwesome6_Brands.ttf in Resources */,
+				61A37BC02B3D564B00E8359A /* Foundation.ttf in Resources */,
+				61A37BC42B3D564B00E8359A /* MaterialCommunityIcons.ttf in Resources */,
+				61A37BC32B3D564B00E8359A /* Entypo.ttf in Resources */,
+				61A37BC22B3D564B00E8359A /* FontAwesome6_Regular.ttf in Resources */,
+				61A37BCE2B3D564B00E8359A /* Octicons.ttf in Resources */,
+				61A37BCC2B3D564B00E8359A /* Ionicons.ttf in Resources */,
+				61A37BCB2B3D564B00E8359A /* FontAwesome5_Brands.ttf in Resources */,
+				61A37BCA2B3D564B00E8359A /* FontAwesome6_Solid.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				61A37BD02B3D564B00E8359A /* Fontisto.ttf in Resources */,
+				61A37BC92B3D564B00E8359A /* FontAwesome5_Regular.ttf in Resources */,
+				61A37BD12B3D564B00E8359A /* MaterialIcons.ttf in Resources */,
+				61A37BD22B3D564B00E8359A /* Zocial.ttf in Resources */,
+				61A37BC62B3D564B00E8359A /* FontAwesome.ttf in Resources */,
+				61A37BC52B3D564B00E8359A /* EvilIcons.ttf in Resources */,
+				61A37BC12B3D564B00E8359A /* Feather.ttf in Resources */,
+				61A37BCD2B3D564B00E8359A /* SimpleLineIcons.ttf in Resources */,
+				61A37BCF2B3D564B00E8359A /* FontAwesome5_Solid.ttf in Resources */,
+				61A37BC82B3D564B00E8359A /* AntDesign.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,24 +352,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		4D6176AFA95A935007A40B05 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric/Pods-EEGBiometric-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric-EEGBiometricTests/Pods-EEGBiometric-EEGBiometricTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric/Pods-EEGBiometric-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric-EEGBiometricTests/Pods-EEGBiometric-EEGBiometricTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric/Pods-EEGBiometric-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric-EEGBiometricTests/Pods-EEGBiometric-EEGBiometricTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		9D8164067F696AD08F53C2E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,7 +391,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		BCB282C3AC13F9FE9751CCA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric-EEGBiometricTests/Pods-EEGBiometric-EEGBiometricTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric-EEGBiometricTests/Pods-EEGBiometric-EEGBiometricTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric-EEGBiometricTests/Pods-EEGBiometric-EEGBiometricTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C160ED4B042B62E78C0405B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric/Pods-EEGBiometric-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric/Pods-EEGBiometric-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric/Pods-EEGBiometric-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5CFDC214E60B6B3B19E7E2A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,24 +447,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric-EEGBiometricTests/Pods-EEGBiometric-EEGBiometricTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric-EEGBiometricTests/Pods-EEGBiometric-EEGBiometricTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric-EEGBiometricTests/Pods-EEGBiometric-EEGBiometricTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+		F4F1F3EB2A15D72B1EB8CEA1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -359,23 +462,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric/Pods-EEGBiometric-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric-EEGBiometricTests/Pods-EEGBiometric-EEGBiometricTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric-EEGBiometricTests/Pods-EEGBiometric-EEGBiometricTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EEGBiometric-EEGBiometricTests/Pods-EEGBiometric-EEGBiometricTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -430,7 +516,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-EEGBiometric-EEGBiometricTests.debug.xcconfig */;
+			baseConfigurationReference = 72EECF09182083B0DB1D0EB6 /* Pods-EEGBiometric-EEGBiometricTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -457,7 +543,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-EEGBiometric-EEGBiometricTests.release.xcconfig */;
+			baseConfigurationReference = A9121B638FA3706CB008889B /* Pods-EEGBiometric-EEGBiometricTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -481,11 +567,12 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-EEGBiometric.debug.xcconfig */;
+			baseConfigurationReference = 61D0472A8D3E8BBB004D0D0F /* Pods-EEGBiometric.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = EEGBiometric/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -508,11 +595,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-EEGBiometric.release.xcconfig */;
+			baseConfigurationReference = 71F74FABE1047ACFB9D104C5 /* Pods-EEGBiometric.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				INFOPLIST_FILE = EEGBiometric/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
