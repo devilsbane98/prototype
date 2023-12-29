@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import * as React from 'react';
 import {useEffect} from 'react';
 import {StyleSheet, TouchableOpacity, View} from 'react-native';
@@ -7,7 +8,7 @@ import DocumentPicker, {
   isInProgress,
 } from 'react-native-document-picker';
 import axios from 'axios';
-import {Appbar, Button, IconButton, Text} from 'react-native-paper';
+import {Appbar, IconButton, Text} from 'react-native-paper';
 import {SvgUri} from 'react-native-svg';
 import SignatureIcon from './SignatureIcon';
 import CustomerIcon from './CustomerIcon';
@@ -73,7 +74,7 @@ export function HomeScreen({navigation}) {
           icon="arrow-left"
           size={20}
           style={headerStyles.iconButton}
-          onPress={() => navigation.goBack()}
+          onPress={() => navigation.pop()}
         />
         {/* Title */}
         <View style={headerStyles.titleContainer}>
@@ -94,7 +95,6 @@ export function HomeScreen({navigation}) {
           fontFamily: 'Inter',
           fontWeight: '700',
           letterSpacing: 1.35,
-          wordWrap: 'break-word',
         }}>
         Home
       </Text>
@@ -208,14 +208,6 @@ export function HomeScreen({navigation}) {
               flexDirection: 'row',
               alignItems: 'center',
             }}>
-            {/* <SvgUri width={50} height={50} source={'./../assets/signature.svg'} /> */}
-            {/* <Signature height={10} weight={10} /> */}
-            {/* <IconButton
-            icon="clipboard-signature"
-            size={20}
-            style={headerStyles.iconButton}
-            onPress={() => navigation.goBack()}
-          /> */}
             <View
               style={{
                 width: 40,
@@ -266,7 +258,7 @@ export function HomeScreen({navigation}) {
           <IconButton
             icon="arrow-right"
             size={20}
-            onPress={() => navigation.goBack()}
+            onPress={() => navigation.navigate('DatabaseList')}
           />
         </View>
       </TouchableOpacity>
@@ -355,7 +347,17 @@ export function HomeScreen({navigation}) {
           <IconButton
             icon="arrow-right"
             size={20}
-            onPress={() => navigation.goBack()}
+            onPress={async () => {
+              try {
+                const pickerResult = await DocumentPicker.pickSingle({
+                  presentationStyle: 'fullScreen',
+                  copyTo: 'cachesDirectory',
+                });
+                setResult([pickerResult]);
+              } catch (e) {
+                handleError(e);
+              }
+            }}
           />
         </View>
       </TouchableOpacity>
@@ -365,19 +367,24 @@ export function HomeScreen({navigation}) {
   );
 }
 
-const headerStyles = StyleSheet.create({
+export const headerStyles = StyleSheet.create({
   container: {
     backgroundColor: 'transparent',
     elevation: 0, // This removes the shadow on Android
   },
   iconButton: {
     overflow: 'visible',
-    backgroundColor: '#F0F8FF',
+    backgroundColor: 'white',
     boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)',
     color: 'white',
     borderRadius: 8,
     borderWidth: 0.2,
     elevation: 5, // For Android
+    shadowColor: '#171717',
+    shadowOffset: {width: -2, height: 4},
+    shadowOpacity: 0.2,
+    shadowRadius: 3,
+    marginBottom: 10,
   },
   titleContainer: {
     alignItems: 'center',
@@ -385,16 +392,18 @@ const headerStyles = StyleSheet.create({
     flex: 1,
   },
   titleText: {
-    color: 'white',
+    color: 'black',
+    display: 'none',
     fontSize: 18,
   },
 });
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'white',
     padding: 20,
+    width: '100%',
   },
   box: {
     width: 60,

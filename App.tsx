@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import {StartScreen} from './components/Start';
 import {HomeScreen} from './components/Home';
 import {AnalysisFailed} from './components/AnalysisFailed';
 import {NavigationContainer} from '@react-navigation/native';
@@ -16,7 +17,18 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Start" component={StartScreen} />
+
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{title: 'Home', headerShown: false}}
+        />
+        <Stack.Screen
+          name="DatabaseList"
+          component={DatabaseList}
+          options={{title: 'Database', headerShown: false}}
+        />
         <Stack.Screen
           name="AnalysisFailed"
           component={AnalysisFailed}
@@ -25,13 +37,9 @@ export default function App() {
         <Stack.Screen
           name="AnalysisSuccess"
           component={AnalysisSuccess}
-          options={{title: 'Analysis Succeeded'}}
+          options={{title: 'Analysis Succeeded', headerShown: false}}
         />
-        <Stack.Screen
-          name="DatabaseList"
-          component={DatabaseList}
-          options={{title: 'Database'}}
-        />
+
         <Stack.Screen
           name="Loader"
           component={Loader}
@@ -42,7 +50,25 @@ export default function App() {
           component={Stimuli}
           options={{headerShown: false}}
         />
-        <Stack.Screen name="Analysis" component={Analysis} />
+        <Stack.Screen
+          name="Analysis"
+          component={Analysis}
+          options={{
+            headerShown: false,
+            title: 'Analysis',
+            headerStyle: {
+              backgroundColor: 'transparent',
+            },
+            headerBackButtonMenuEnabled: true,
+            headerBackTitleVisible: true,
+            headerTintColor: '#151940',
+            headerBackTitleStyle: {
+              fontFamily: 'Inter',
+
+              fontSize: 25,
+            },
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
