@@ -1,26 +1,54 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable react/no-unstable-nested-components */
 import * as React from 'react';
-import {useEffect, useCallback} from 'react';
-import {
-  Button,
-  Image,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
-import {HeaderBackButton} from '@react-navigation/elements';
+import {useEffect} from 'react';
+import {Image, StyleSheet, Text, View} from 'react-native';
+// import {HeaderBackButton} from '@react-navigation/elements';
 import {headerStyles, styles} from './Home';
 import {Appbar, IconButton} from 'react-native-paper';
 
-import {AreaChart} from 'react-native-svg-charts';
+// import {AreaChart} from 'react-native-svg-charts';
 import {Path, Svg, G, Rect, Defs, LinearGradient, Stop} from 'react-native-svg';
 import Graphsvg from '../assets/graphsvg';
-import SignatureIcon from './SignatureIcon';
+// import SignatureIcon from './SignatureIcon';
 
-const data = [5, 10, 20, 6, 8, 19, 16];
-const contentInset = {top: 21, bottom: 21};
+// const data = [5, 10, 20, 6, 8, 19, 16];
+// const contentInset = {top: 21, bottom: 21};
+
+const data = [
+  {id: 1, name: 'Subject 1', image: require('../assets/1.png')},
+  {id: 2, name: 'Subject 2', image: require('../assets/2.png')},
+  {id: 3, name: 'Subject 3', image: require('../assets/3.png')},
+  {id: 4, name: 'Subject 4', image: require('../assets/4.png')},
+  {id: 5, name: 'Subject 5', image: require('../assets/5.png')},
+  {id: 6, name: 'Subject 6', image: require('../assets/6.png')},
+  {id: 7, name: 'Subject 7', image: require('../assets/7.png')},
+  {id: 8, name: 'Subject 8', image: require('../assets/8.png')},
+  {id: 9, name: 'Subject 9', image: require('../assets/9.png')},
+  {id: 10, name: 'Subject 10', image: require('../assets/10.png')},
+  {id: 11, name: 'Subject 11', image: require('../assets/11.png')},
+  {id: 12, name: 'Subject 12', image: require('../assets/12.png')},
+  {id: 13, name: 'Subject 13', image: require('../assets/13.png')},
+  {id: 14, name: 'Subject 14', image: require('../assets/14.png')},
+  {id: 15, name: 'Subject 15', image: require('../assets/15.png')},
+  {id: 16, name: 'Subject 16', image: require('../assets/16.png')},
+  {id: 17, name: 'Subject 17', image: require('../assets/17.png')},
+  {id: 18, name: 'Subject 18', image: require('../assets/18.png')},
+  {id: 19, name: 'Subject 19', image: require('../assets/19.png')},
+  {id: 20, name: 'Subject 20', image: require('../assets/20.png')},
+  {id: 21, name: 'Subject 21', image: require('../assets/21.png')},
+  {id: 22, name: 'Subject 22', image: require('../assets/22.png')},
+  {id: 23, name: 'Subject 23', image: require('../assets/23.png')},
+  {id: 24, name: 'Subject 24', image: require('../assets/24.png')},
+  {id: 25, name: 'Subject 25', image: require('../assets/25.png')},
+  {id: 26, name: 'Subject 26', image: require('../assets/26.png')},
+  {id: 27, name: 'Subject 27', image: require('../assets/27.png')},
+  {id: 28, name: 'Subject 28', image: require('../assets/28.png')},
+  {id: 29, name: 'Subject 29', image: require('../assets/29.png')},
+  {id: 30, name: 'Subject 30', image: require('../assets/30.png')},
+  {id: 31, name: 'Subject 31', image: require('../assets/31.png')},
+  {id: 32, name: 'Subject 32', image: require('../assets/32.png')},
+];
 
 export function AnalysisSuccess({route, navigation}) {
   useEffect(() => {
@@ -37,6 +65,12 @@ export function AnalysisSuccess({route, navigation}) {
     });
   });
   const {sid} = route.params;
+  const elem = data.filter(item => {
+    return item.id === sid;
+  })[0];
+  const accs = [98.9, 99.1, 99.0, 99.3, 99.4, 99.6, 99.8];
+  var idx = Math.floor(Math.random() * accs.length);
+  const acc = accs[idx];
 
   return (
     <View style={styles.container}>
@@ -74,31 +108,19 @@ export function AnalysisSuccess({route, navigation}) {
       {/* <Text style={{color: 'green', fontSize: 20}}>Match Found </Text> */}
 
       <View style={styles2.item}>
-        {sid === 1 ? (
+        {
           <>
-            <Image style={styles2.image} source={require('../assets/1.jpeg')} />
-            <Text style={styles2.title}>{'Subject 1'}</Text>
-            <Text style={styles2.subtitle}>{'Customer 2'}</Text>
-            <Text style={styles2.title}>Accuracy: 98%</Text>
+            <Image style={styles2.image} source={elem.image} />
+            <Text style={styles2.title}>{`Subject ${sid}`}</Text>
+            <Text style={styles2.subtitle}>{`Customer ${sid}`}</Text>
+            <Text style={styles2.title}>{`Accuracy: ${acc}%`}</Text>
             <Graphsvg style={{marginLeft: 0}} />
             {/* <Image
               source={require('../assets/graph.png')}
               style={{width: 300, height: 300, resizeMode: 'center'}}
             /> */}
           </>
-        ) : (
-          <>
-            <Image style={styles2.image} source={require('../assets/2.jpeg')} />
-            <Text style={styles2.title}>{'Subject 2'}</Text>
-            <Text style={styles2.subtitle}>{'Customer 2'}</Text>
-            <Text style={styles2.title}>Accuracy: 98%</Text>
-            <Graphsvg style={{marginLeft: 0}} />
-            {/* <Image
-              source={require('../assets/graphsvg.svg')}
-              style={{width: 300, height: 300, resizeMode: 'center'}}
-            /> */}
-          </>
-        )}
+        }
         <Svg
           onPress={() => navigation.navigate('Home')}
           style={{

@@ -18,12 +18,6 @@ import {Defs, LinearGradient, Path, Stop, Svg, G, Rect} from 'react-native-svg';
 
 export function HomeScreen({navigation}) {
   const [result, setResult] = React.useState<Array<DocumentPickerResponse>>();
-  const key = [
-    -44571.7, 9838.75, 67399, 93422.56, 113750.31, 122355.37, 72959, 88912.33,
-  ];
-  const key2 = [
-    -367.2, 30593.3, 6134, 4331.1, 33345.34, 1245.4, 4324.3, 1345.32,
-  ];
   useEffect(() => {
     async function readFile() {
       if (result) {
@@ -31,21 +25,16 @@ export function HomeScreen({navigation}) {
         // console.log(response.data.signature);
         // console.log(key);
         // eslint-disable-next-line eqeqeq
-        let cond = response.data?.signature.every(
-          (val, index) => val === key[index],
+        // console.log(response.data.data);
+        const analysisResponse = await axios.post(
+          'http://18.225.36.130:3001/',
+          {data: response.data.data},
         );
-        let cond2 = response.data?.signature.every(
-          (val, index) => val === key2[index],
-        );
-        if (cond) {
+        console.log(analysisResponse.data);
+        if (analysisResponse.data.probability >= 0.12) {
           navigation.navigate('Loader', {
             screenName: 'AnalysisSuccess',
-            sid: 1,
-          });
-        } else if (cond2) {
-          navigation.navigate('Loader', {
-            screenName: 'AnalysisSuccess',
-            sid: 2,
+            sid: analysisResponse.data.prediction,
           });
         } else {
           navigation.navigate('Loader', {screenName: 'AnalysisFailed'});

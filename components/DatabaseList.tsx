@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import * as React from 'react';
 import {useEffect} from 'react';
 import {Appbar, IconButton, Text, List, Avatar} from 'react-native-paper';
@@ -8,13 +9,44 @@ import {
   Image,
   Button as NativeButton,
   TouchableOpacity,
+  ScrollView,
 } from 'react-native';
 
 import {headerStyles, styles} from './Home';
 
 const data = [
-  {id: 1, name: 'Subject 1', image: require('../assets/1.jpeg')},
-  {id: 2, name: 'Subject 2', image: require('../assets/2.jpeg')},
+  {id: 1, name: 'Subject 1', image: require('../assets/1.png')},
+  {id: 2, name: 'Subject 2', image: require('../assets/2.png')},
+  {id: 3, name: 'Subject 3', image: require('../assets/3.png')},
+  {id: 4, name: 'Subject 4', image: require('../assets/4.png')},
+  {id: 5, name: 'Subject 5', image: require('../assets/5.png')},
+  {id: 6, name: 'Subject 6', image: require('../assets/6.png')},
+  {id: 7, name: 'Subject 7', image: require('../assets/7.png')},
+  {id: 8, name: 'Subject 8', image: require('../assets/8.png')},
+  {id: 9, name: 'Subject 9', image: require('../assets/9.png')},
+  {id: 10, name: 'Subject 10', image: require('../assets/10.png')},
+  {id: 11, name: 'Subject 11', image: require('../assets/11.png')},
+  {id: 12, name: 'Subject 12', image: require('../assets/12.png')},
+  {id: 13, name: 'Subject 13', image: require('../assets/13.png')},
+  {id: 14, name: 'Subject 14', image: require('../assets/14.png')},
+  {id: 15, name: 'Subject 15', image: require('../assets/15.png')},
+  {id: 16, name: 'Subject 16', image: require('../assets/16.png')},
+  {id: 17, name: 'Subject 17', image: require('../assets/17.png')},
+  {id: 18, name: 'Subject 18', image: require('../assets/18.png')},
+  {id: 19, name: 'Subject 19', image: require('../assets/19.png')},
+  {id: 20, name: 'Subject 20', image: require('../assets/20.png')},
+  {id: 21, name: 'Subject 21', image: require('../assets/21.png')},
+  {id: 22, name: 'Subject 22', image: require('../assets/22.png')},
+  {id: 23, name: 'Subject 23', image: require('../assets/23.png')},
+  {id: 24, name: 'Subject 24', image: require('../assets/24.png')},
+  {id: 25, name: 'Subject 25', image: require('../assets/25.png')},
+  {id: 26, name: 'Subject 26', image: require('../assets/26.png')},
+  {id: 27, name: 'Subject 27', image: require('../assets/27.png')},
+  {id: 28, name: 'Subject 28', image: require('../assets/28.png')},
+  {id: 29, name: 'Subject 29', image: require('../assets/29.png')},
+  {id: 30, name: 'Subject 30', image: require('../assets/30.png')},
+  {id: 31, name: 'Subject 31', image: require('../assets/31.png')},
+  {id: 32, name: 'Subject 32', image: require('../assets/32.png')},
 ];
 type ItemProps = {name: string; image: any};
 const Item = ({name, image}: ItemProps) => (
@@ -62,148 +94,150 @@ export function DatabaseList({navigation}) {
           onPress={() => console.log('Dots pressed')}
         />
       </Appbar.Header>
-      <List.Section>
-        <Text
-          style={{
-            color: '#151940',
-            fontSize: 45,
-            fontFamily: 'Inter',
-            fontWeight: '700',
-            letterSpacing: 1.35,
-          }}>
-          Database
-        </Text>
-        <Text
-          style={{
-            width: '100%',
-            color: '#3A759F',
-            fontSize: 14,
-            fontFamily: 'Inter',
-            fontWeight: '400',
-            paddingBottom: 20,
-          }}>
-          Customer List
-        </Text>
+      <ScrollView>
+        <List.Section>
+          <Text
+            style={{
+              color: '#151940',
+              fontSize: 45,
+              fontFamily: 'Inter',
+              fontWeight: '700',
+              letterSpacing: 1.35,
+            }}>
+            Database
+          </Text>
+          <Text
+            style={{
+              width: '100%',
+              color: '#3A759F',
+              fontSize: 14,
+              fontFamily: 'Inter',
+              fontWeight: '400',
+              paddingBottom: 20,
+            }}>
+            Customer List
+          </Text>
 
-        {data.map(item => (
-          <TouchableOpacity
-            onPress={() => navigation.navigate('Home')}
-            style={headerStyles.iconButton}>
-            <View
-              style={{
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                margin: 8,
-              }}>
-              {/* card 1 */}
+          {data.map(item => (
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Home')}
+              style={headerStyles.iconButton}>
               <View
                 style={{
-                  height: 80,
-                  justifyContent: 'center',
                   flexDirection: 'row',
+                  justifyContent: 'space-between',
                   alignItems: 'center',
+                  margin: 8,
                 }}>
+                {/* card 1 */}
                 <View
                   style={{
-                    width: 40,
-                    height: 40,
-                    backgroundColor: '#F0F8FF',
-                    display: 'flex',
+                    height: 80,
                     justifyContent: 'center',
+                    flexDirection: 'row',
                     alignItems: 'center',
-                    borderRadius: 8,
                   }}>
-                  <Avatar.Image
-                    size={50}
+                  <View
                     style={{
-                      marginLeft: 10,
-                    }}
-                    source={item.image}
-                  />
-                  {/* <SignatureIcon
+                      width: 40,
+                      height: 40,
+                      backgroundColor: '#F0F8FF',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      borderRadius: 8,
+                    }}>
+                    <Avatar.Image
+                      size={50}
+                      style={{
+                        marginLeft: 10,
+                      }}
+                      source={item.image}
+                    />
+                    {/* <SignatureIcon
                     style={{
                       width: 50,
                       height: 50,
                       backgroundColor: '#F0F8FF',
                     }}
                   /> */}
-                </View>
-                <View
-                  style={{
-                    marginLeft: 20,
-                  }}>
-                  <Text
+                  </View>
+                  <View
                     style={{
-                      color: '#151940',
-                      fontSize: 18,
-                      fontFamily: 'Inter',
-                      fontWeight: '700',
-                      letterSpacing: 1.35,
+                      marginLeft: 20,
                     }}>
-                    {item.name}
-                  </Text>
-                  <Text
-                    style={{
-                      width: '100%',
-                      color: '#3A759F',
-                      fontSize: 12,
-                      fontFamily: 'Inter',
-                      fontWeight: '400',
-                    }}>
-                    Customer {item.id}
-                  </Text>
+                    <Text
+                      style={{
+                        color: '#151940',
+                        fontSize: 18,
+                        fontFamily: 'Inter',
+                        fontWeight: '700',
+                        letterSpacing: 1.35,
+                      }}>
+                      {item.name}
+                    </Text>
+                    <Text
+                      style={{
+                        width: '100%',
+                        color: '#3A759F',
+                        fontSize: 12,
+                        fontFamily: 'Inter',
+                        fontWeight: '400',
+                      }}>
+                      Customer {item.id}
+                    </Text>
+                  </View>
                 </View>
+                <NativeButton
+                  disabled
+                  onPress={() => {
+                    navigation.navigate('Home');
+                  }}
+                  title="See More"
+                />
               </View>
-              <NativeButton
-                disabled
-                onPress={() => {
-                  navigation.navigate('Home');
-                }}
-                title="See More"
-              />
-            </View>
-          </TouchableOpacity>
-          // <Text
-          //   style={{
-          //     backgroundColor: 'whitesmoke',
-          //     marginTop: 20,
-          //     shadowColor: '#171717',
-          //     shadowOffset: {width: -2, height: 4},
-          //     shadowOpacity: 0.2,
-          //     shadowRadius: 3,
-          //     borderRadius: 5,
-          //     display: 'flex',
-          //     flexDirection: 'column',
-          //     justifyContent: 'center',
-          //     padding: 10,
-          //     paddingLeft: 20,
-          //     width: 330,
-          //   }}>
-          //   {' '}
-          //   {/* <List.Item
-          //     title={item.name}
-          //     left={() => ( */}
-          //   <Avatar.Image
-          //     size={50}
-          //     style={{
-          //       marginLeft: 10,
-          //     }}
-          //     source={item.image}
-          //   />
-          //   {/* )}
-          //   /> */}
-          //   <NativeButton
-          //     onPress={() => {
-          //       navigation.navigate('Home');
-          //     }}
-          //     title="View More"
-          //   />
-          // </Text>
+            </TouchableOpacity>
+            // <Text
+            //   style={{
+            //     backgroundColor: 'whitesmoke',
+            //     marginTop: 20,
+            //     shadowColor: '#171717',
+            //     shadowOffset: {width: -2, height: 4},
+            //     shadowOpacity: 0.2,
+            //     shadowRadius: 3,
+            //     borderRadius: 5,
+            //     display: 'flex',
+            //     flexDirection: 'column',
+            //     justifyContent: 'center',
+            //     padding: 10,
+            //     paddingLeft: 20,
+            //     width: 330,
+            //   }}>
+            //   {' '}
+            //   {/* <List.Item
+            //     title={item.name}
+            //     left={() => ( */}
+            //   <Avatar.Image
+            //     size={50}
+            //     style={{
+            //       marginLeft: 10,
+            //     }}
+            //     source={item.image}
+            //   />
+            //   {/* )}
+            //   /> */}
+            //   <NativeButton
+            //     onPress={() => {
+            //       navigation.navigate('Home');
+            //     }}
+            //     title="View More"
+            //   />
+            // </Text>
 
-          // </Button>
-        ))}
-      </List.Section>
+            // </Button>
+          ))}
+        </List.Section>
+      </ScrollView>
 
       <Svg
         onPress={() => navigation.navigate('Home')}
